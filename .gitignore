@@ -1,0 +1,6 @@
+raw/
+dataset/
+*.keras
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
