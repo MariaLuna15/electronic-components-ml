@@ -30,3 +30,5 @@ Modelo de Machine Learning para reconocer componentes electrónicos automáticam
 ## 🚀 Cómo ejecutarlo
 
 ### 1. Clonar el repositorio
+
+### 2. Crear entorno virtual
