@@ -1,24 +1,32 @@
-# Electronic Components ML 🔍
+# 🔍 Electronic Components ML
 
-Modelo de Machine Learning para reconocer componentes electrónicos a partir de imágenes usando Transfer Learning con EfficientNetB0.
+Modelo de Machine Learning para reconocer componentes electrónicos automáticamente a partir de imágenes, usando Transfer Learning con EfficientNetB0 y TensorFlow.
 
-## Componentes detectados
-- Resistencia
-- Capacitor
-- LED
-- Transistor
-- Diodo
+## 📸 Demo
 
-## Tecnologías
+![Matriz de confusión](matriz_confusion.png)
+![Muestra del dataset](muestra_dataset.png)
+
+## 🎯 Componentes detectados
+| Componente | Precisión |
+|------------|-----------|
+| LED | 84% |
+| Transistor | 71% |
+| Diodo | 64% |
+| Resistencia | 60% |
+| Capacitor | 58% |
+
+**Precisión global: 65%** con solo ~787 imágenes y sin GPU.
+
+## 🛠️ Tecnologías
 - Python 3.13
 - TensorFlow 2.21
-- OpenCV
+- EfficientNetB0 Transfer Learning
+- OpenCV 4.13
 - Gradio
 - JupyterLab
+- scikit-learn
 
-## Precisión
-- Train accuracy: 85%
-- Val accuracy: 70%
-- Test accuracy: 65%
+## 🚀 Cómo ejecutarlo
 
-## Estructura del proyecto
+### 1. Clonar el repositorio
