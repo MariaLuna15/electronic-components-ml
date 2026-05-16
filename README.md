@@ -1,14 +1,15 @@
-# 🔍 Electronic Components ML
+# Electronic Components ML
 
-Modelo de Machine Learning para reconocer componentes electrónicos automáticamente a partir de imágenes, usando Transfer Learning con EfficientNetB0 y TensorFlow.
+Modelo de Machine Learning para reconocer componentes electronicos automaticamente a partir de imagenes, usando Transfer Learning con EfficientNetB0 y TensorFlow.
 
-## 📸 Demo
+## Demo
 
-![Matriz de confusión](matriz_confusion.png)
+![Matriz de confusion](matriz_confusion.png)
 ![Muestra del dataset](muestra_dataset.png)
 
-## 🎯 Componentes detectados
-| Componente | Precisión |
+## Componentes detectados
+
+| Componente | Precision |
 |------------|-----------|
 | LED | 84% |
 | Transistor | 71% |
@@ -16,9 +17,10 @@ Modelo de Machine Learning para reconocer componentes electrónicos automáticam
 | Resistencia | 60% |
 | Capacitor | 58% |
 
-**Precisión global: 65%** con solo ~787 imágenes y sin GPU.
+Precision global: 65% con solo 787 imagenes y sin GPU.
 
-## 🛠️ Tecnologías
+## Tecnologias
+
 - Python 3.13
 - TensorFlow 2.21
 - EfficientNetB0 Transfer Learning
@@ -27,8 +29,28 @@ Modelo de Machine Learning para reconocer componentes electrónicos automáticam
 - JupyterLab
 - scikit-learn
 
-## 🚀 Cómo ejecutarlo
+## Como ejecutarlo
 
-### 1. Clonar el repositorio
+1. Clonar el repositorio
+2. Crear entorno virtual: python3 -m venv entorno
+3. Activar entorno: source entorno/bin/activate
+4. Instalar dependencias: pip install tensorflow opencv-python pillow icrawler matplotlib scikit-learn jupyterlab gradio seaborn
+5. Ejecutar: jupyter lab
+6. Correr las notebooks en orden: 01_dataset, 02_modelo, 03_demo
 
-### 2. Crear entorno virtual
+## Arquitectura del modelo
+
+- Base: EfficientNetB0 preentrenado en ImageNet
+- Capas: GlobalAveragePooling2D, Dropout, Dense 128, Dense 5
+- Optimizador: Adam lr=0.0005
+- Fine-tuning: ultimas 20 capas con lr=0.00005
+
+## Resultados
+
+- Train accuracy: 85%
+- Validation accuracy: 70%
+- Test accuracy: 65%
+
+## Autora
+
+Maria Luna - https://github.com/MariaLuna15
