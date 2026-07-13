@@ -2,12 +2,6 @@
 
 Modelo de Machine Learning para reconocer componentes electronicos automaticamente a partir de imagenes, usando Transfer Learning con EfficientNetB0 y TensorFlow.
 
-## 🎥 Demo en video
-
-[![Ver demo](https://img.youtube.com/vi/h5QoskYB4Fc/0.jpg)](https://youtu.be/h5QoskYB4Fc)
-
-[▶️ Ver demo completa en YouTube](https://youtu.be/h5QoskYB4Fc)
-
 ## Demo
 
 ![Matriz de confusion](matriz_confusion.png)
